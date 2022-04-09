@@ -1,0 +1,980 @@
+:root{
+    --blue: #71f6eb;
+    --grey:#505050;
+    --introgrey:#eff0f2;
+    --aboutus:#f9fbfb;
+    --works:white;
+    --services:#f9fbfb;
+    --team:white;
+    --whatthey:#f9fbfb;
+    --fonwhatthey:#eaebed;
+    --karta:white;
+    --fonkarta:#455661;
+    --footer:#262b2e;
+}
+
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    font-size:2.4rem;
+    color:black;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+}
+
+p{
+    margin:0 0 1rem;
+}
+
+*, *:before,*:after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:0 auto;
+}
+
+.header{
+    padding:4rem 0;
+    position:relative;
+}
+
+.header_inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    border:6px solid black;
+    padding:0.5rem 0.3rem;
+}
+
+.logo_in{
+    margin:auto;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_link{
+    padding-left:2rem;
+    position:relative;
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.intro_inner{
+    padding-top:7.5rem;
+    position:relative;
+}
+
+.intro, .header{
+    background-color: var(--introgrey);
+}
+
+.hello{
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--grey);
+    text-shadow: 2px 6px  8px #aaa9a9;
+    text-align:center;
+}
+
+.hello_shop{
+    font-size:2.3rem;
+    background-color:rgba(178,242,238,0.85); 
+    display:inline-block;
+}
+
+.button{
+    padding-top:0.9rem;
+    padding-bottom:0.9rem;
+    padding-left:3.1rem;
+    padding-right:3.1rem;
+    width:14rem;
+    text-align: center;
+	font-size: 1rem;
+	background-color: transparent;
+	border-color: var(--grey);
+	border-width:2px;
+	border-style:solid;
+	cursor:pointer;
+	overflow: hidden;
+	text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing:1px;
+}
+
+.button:hover{
+    background-color: var(--grey);
+    border:white;
+    color:white;
+}
+
+.btn{
+    margin-top:9rem;
+    padding-bottom:12.5rem;
+}
+
+.zagolovok{
+    text-align: center;
+}
+
+.about_us{
+    padding-top:9rem;
+    padding-bottom:9rem;
+    background-color: var(--aboutus);
+}
+
+.title {
+    font-size:2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom:1rem;
+}
+
+.sub_title{
+    font-size:1rem;
+    font-family:'Merriweather', sans-serif;
+    color:var(--grey);
+    text-transform: uppercase;
+}
+
+.about_photo{
+    width:390px; 
+    height:480px;
+    float:left;
+    margin-bottom:9rem;
+    box-shadow: -3px 0px 15px #cecdcd;
+    position: relative;
+}
+
+.empty{
+    background-color: var(--introgrey);
+    width: 30rem;
+    height: 25.5rem;
+    margin-left: -3rem;
+    margin-top: 2.2rem;
+    margin-right: 6.5rem;
+}
+
+.about_content{
+    padding-top:9rem;
+    display:flex;
+}
+
+.info_zag{
+    font-size:1.5rem;
+    padding-bottom:2rem;
+    text-transform: uppercase;
+    font-family:'Merriweather', sans-serif;
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.info_content{
+    float:right;
+}
+
+.info_osn{
+    font-size:1rem;
+    font-family: 'Raleway',sans-serif;
+    color:var(--grey);
+    line-height: 1.7;
+}
+
+.works{
+    background-color: white;
+}
+
+.text_works, .text_services{
+    padding-top:8rem;
+    padding-bottom:7.5rem;
+    text-align: center;
+}
+
+.works_box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:8rem;
+    justify-content: center;
+}
+
+.works_photo{
+    padding-right:0.9rem;
+    padding-bottom:0.9rem;
+    max-width: 33%;
+}
+
+.services{
+    background-color: var(--services);
+}
+
+.services_box{
+    padding-bottom:7.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.service1{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(files/ser1.png);
+    width: 40rem;
+    height: 26rem;
+}
+
+.service1_2{
+    background-color: var(--blue);
+    width: 40rem;
+    height: 26rem;
+}
+
+.service2{
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(files/ser2.png);
+    width: 29.5rem;
+    height: 26rem;
+}
+
+.service2_2{
+    background-color: var(--blue);
+    width: 29.5rem;
+    height: 26rem;
+}
+
+.service3{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(files/ser3.png);
+    width: 40rem;
+    height: 23rem;
+}
+
+.service3_2{
+    background-color:var(--blue);
+    width: 40rem;
+    height: 23rem;
+}
+
+.service4{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(files/ser4.png);
+    width: 29.5rem;
+    height: 23rem;
+}
+
+.service4_2{
+    background-color:var(--blue);
+    width: 29.5rem;
+    height: 23rem;
+}
+
+.service5{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(files/ser5.png);
+    width: 29.5rem;
+    height: 23rem;
+}
+
+.service5_2{
+    background-color:var(--blue);
+    width: 29.5rem;
+    height: 23rem;
+}
+
+.service6{
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url(files/ser6.png);
+    width: 40rem;
+    height: 23rem;
+}
+
+.service6_2{
+    background-color:var(--blue);
+    width: 40rem;
+    height: 23rem;
+}
+
+.serv_none{
+    display: none;
+}
+
+.service1,.service2,.service3,.service4,.service5,.service6,.service1_2,.service2_2,.service3_2,.service4_2,.service5_2,.service6_2{
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
+
+.know_more{
+    padding:3.5rem 0 3.8rem 3.8rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: medium;
+    font-size: 1rem;
+    text-decoration: none;
+    color:var(--introgrey);
+    text-transform: uppercase;
+}
+
+.back{
+    color:black;
+    padding:3.5rem 0 3.8rem 3.8rem;
+    font-family: 'Raleway',sans-serif;
+    font-weight: medium;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.serv_h3{
+    padding:10rem 0 0 3.8rem;
+    font-family:'Merriweather', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+}
+
+.serv_p{
+    padding:1.5rem 6rem 0 3.8rem;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.8rem;
+    color:var(--introgrey);
+    line-height: 1.7;
+}
+
+.serv_h3_2{
+    padding:3rem 0 0 3.8rem;
+    font-family:'Merriweather', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:black;
+    text-transform: uppercase;
+}
+
+.serv_p_2{
+    padding:1.5rem 0 0 3.8rem;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.8rem;
+    color:black;
+    line-height: 1.7;
+}
+
+.team{
+    background-color: var(--team);
+}
+
+.team_text{
+    margin-top:8rem;
+    margin-bottom:8rem;
+    text-align: center;
+}
+
+.team_photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom:7.5rem;
+}
+
+.photos,.photos1{
+    width:22.5rem;
+    height: 27.5rem;
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
+
+.photos1{
+    background:url(files/t2.png);
+    padding-top:13.8rem;
+    padding-right:3.5rem;
+    padding-left:3.5rem;
+}
+
+.photos1 h3{ 
+    padding-bottom:1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family:'Merriweather', sans-serif;
+    color:black;
+    font-size: 1rem;
+}
+
+.photos1 p{
+    font-size: 1rem;
+    font-family:'Raleway',sans-serif; 
+    line-height: 1.7;
+}
+
+.icons_team{
+    margin-top:-0.5rem;
+}
+
+.they_says{
+    background-color: var(--whatthey);
+    padding-bottom: 12.5rem;
+}
+
+.they_inner_zagolovok{
+    padding-top: 7.5rem;
+    padding-bottom:8rem;
+    text-align: center;
+}
+
+.they_inner_box{
+    display:flex;
+    justify-content: space-between;
+}
+
+.they_photo{
+    width:325px; 
+    height:414px;
+    position: relative;
+    box-shadow: 0px 0px 15px #d6d5d5;
+}
+
+.empty_they{
+    background-color: var(--introgrey);
+    width: 24.4rem;
+    height: 22.6rem;
+    margin-top: -24.9rem;
+    margin-left:-2.1rem;
+}
+
+.they_text{
+    background-color: var(--introgrey);
+    width: 41.5rem;
+    height: 22.5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin-top:1.6rem;
+}
+
+.they_text h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family:'Merriweather', sans-serif;
+    color:black;
+    font-size: 1rem;
+    padding-top:5rem;
+    text-align:center;
+}
+
+.they_text p{
+    font-size: 0.8rem;
+    font-family:'Raleway',sans-serif; 
+    padding-top:2rem;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.stars{
+    text-align: center;
+}
+
+.logo_icon{
+    background-color: white;
+    height: 24rem;
+    padding-top:6rem;
+    align-items: center;
+}
+
+.foot{
+    height: 44rem;
+    width: 100%;
+    background:linear-gradient(
+        rgba(255, 255, 255, 0.6), 
+        rgba(255, 255, 255, 0.6)
+    ),url("files/footer.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.foot_inner{
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.forma{
+    height: 29rem;
+    width: 38.5rem;
+    background-color:rgba(38, 56, 68, 0.85);
+    margin-right: 1.5rem; 
+}
+
+.karta{
+    width: 31rem;
+    height: 29rem;
+    background-color:rgba(38, 56, 68, 0.85);
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    border:0;
+    border-bottom:1px solid #99a1a7;
+    width: 34.5rem;
+    height: 2rem;
+    margin-left:2rem;
+    margin-top:2rem;
+    font-size:1rem;
+    padding-top:0;
+    padding-bottom:0.9rem;
+    background:transparent;
+    font-family:'Raleway',sans-serif;
+    outline:none;
+}
+
+.msg{
+    height: 7rem;
+    padding-bottom:5.3rem;
+}
+
+::placeholder{
+    color:#99a1a7;
+    opacity: 1;
+}
+
+.form_btn{
+    background-color:var(--blue);
+    margin-left:2rem;
+    margin-top:2rem;
+    height: 3.25rem;
+    width: 16rem;
+    color:rgba(38, 56, 68, 0.85);
+    padding:1 auto;
+    text-transform: uppercase;
+    font-family:'Montserrat',sans-serif;
+    font-size: 1rem;
+    cursor:pointer;
+	overflow: hidden;
+    font-weight: bold;
+    border:none;
+    letter-spacing:3px;
+}
+
+.form_btn:hover{
+    background-color:rgba(38, 56, 68, 0.5);
+    color:var(--blue);
+}
+
+.karta{
+    font-family:'Raleway',sans-serif;
+    font-size: 1rem;
+    padding:1rem;
+    color:#99a1a7;
+    line-height: 1.4;
+}
+
+.karta a{
+    text-decoration: none;
+    color:#99a1a7;
+}
+
+.karta p{
+    padding-top: 1rem;
+}
+
+.karta img{
+    padding-top:0.6rem;
+}
+
+.footer{
+    background-color: var(--footer);
+    height: 19.3rem;
+    font-family: 'Raleway',sans-serif;
+    color:#99a1a7;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.text_footer{
+    font-size: 0.7rem;
+    text-transform: none;
+    padding-top:2.5rem;
+}
+.social{
+    text-align: center;
+    padding-top:5.5rem;
+}
+
+
+@media(max-width:1199px){
+    .logo_icon{
+        display: none;
+    }
+
+    .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .info_zag{
+        font-size:1.7rem;
+    }
+
+    .info_osn{
+        font-size:1.5rem;
+    }
+
+    .about_content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title{
+        font-size:2.2rem;
+        margin-top:-1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .sub_title{
+        font-size: 1.5rem;
+        margin-bottom:-2rem;
+    }
+
+    .empty_photo{
+        margin-left: 30%;
+    }
+
+    .service1,.service2,.service3,.service4,.service5,.service6,.service1_2,.service2_2,.service3_2,.service4_2,.service5_2,.service6_2{
+        width: 40rem;
+        height: 26rem;
+    }
+
+    .serv_h3{
+        font-size:1.5rem;
+    }
+
+    .serv_h3_2{
+        font-size:1.5rem;
+        padding:1rem;
+    }
+
+    .know_more{
+        font-size:1.4rem;
+    }
+
+    .back{
+        font-size:1.4rem;
+        padding:0 1rem 0 1rem;
+    }
+
+    .serv_p{
+        font-size:1.4rem;
+    }
+
+    .serv_p_2{
+        font-size:1.4rem;
+        padding:1rem 1rem 0 1rem;
+    }
+
+    .ic_team{
+        width:1rem;
+        height:1rem;
+    }
+
+    .photos1 p,.photos1 h3{
+        font-size:1.2rem;
+        margin-top:-0.2rem;
+    }
+
+    .they_inner_box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .they_text h3{
+        font-size: 1.4rem;
+        margin-top:-2rem;
+    }
+
+    .they_text p{
+        font-size: 1.2rem;
+        margin-top:-0.4rem;
+        margin-bottom:-0.5rem;
+    }
+
+    .star{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .forma, .karta{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
+    input{
+        width: 85%;
+        font-size: 1.2rem;
+    }
+
+    .karta img{
+        width: 100%;
+        height: 45%;
+    }
+
+    .footer{
+        font-size: 1.2rem;
+    }
+
+    .text_footer{
+        font-size: 1rem;
+    }
+
+    .works_photo{
+        max-width: 50%;
+        width: 29rem;
+        height: 29rem;
+    }
+} 
+
+@media(max-width:767px){
+
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .header{
+        display:none;
+    }
+
+    .btn{
+        margin-top: 3rem;
+    }
+
+    .empty_photo{
+        position: relative;
+    }
+
+    .empty{
+        display: none;
+    }
+
+    .about_photo{
+        margin-left: -5.9rem;
+        max-width: 700px;
+        width: 280px;
+        height: 370px;
+        margin-bottom: 5rem;
+    }
+
+    .title{
+        font-size:1.7rem;
+        margin-top: -5rem;
+    }
+
+    .sub_title{
+        font-size: 1.1rem;
+        margin-top: -0.5rem;
+        margin-bottom: -5rem;
+    }
+
+    .info_zag{
+        font-size: 1.3rem;
+    }
+
+    .info_osn{
+        font-size: 1rem;
+    }
+
+    .works_photo{
+        max-width: 100%;
+        max-height: 100%;
+        width: 360px;
+        height: 359px;
+        padding-right: 0;
+    }
+
+    .works_box,.services_box{
+        padding-bottom: 5rem;
+    }
+
+    .text_works, .text_services{
+        padding-top:8rem;
+        padding-bottom:5rem;
+    }
+
+    .serv_h3{
+        padding-left: 1rem;
+        font-size: 1.2rem;
+        padding-right: 1rem;
+    }
+
+    .serv_h3_2{
+        font-size:1.2rem;
+        padding:0.5rem;
+    }
+
+    .serv_p{
+        font-size: 1rem;
+        padding:1rem 1rem 0 1rem;
+    }
+
+    .serv_p_2{
+        font-size:1rem;
+        padding:0.5rem;
+    }
+
+    .know_more{
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+
+    .back{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .photos{
+        margin-right: 0;
+    }
+
+    .photos1 h3{
+        font-size: 1.1rem;
+        padding-top: 1.5rem;
+    }
+
+    .photos1 p{
+        font-size: 0.9rem;
+    }
+
+    .photos1{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .they_inner_zagolovok{
+        padding-bottom:5rem;
+    }
+
+    .they_text h3{
+        font-size:1.1rem;
+    }
+
+    .they_text p{
+        font-size: 0.9rem;
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+    }
+
+    .they_text{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .star{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .empty_they{
+        display: none;
+    }
+
+    .foot_inner{
+        flex-wrap: wrap;
+        padding-top: 5rem;
+    }
+
+    .forma{
+        max-width: 100%;
+        height: 29rem;
+        width: 29rem;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    input{
+        margin-left: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .form_btn{
+        margin-left: 1.5rem;
+        height: 2.5rem;
+        width: 12rem;
+        font-size: 0.9rem;
+    }
+
+    .karta{
+        max-width: 100%;
+        height: 29rem;
+        width: 29rem;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    .foot{
+        background-color: white;
+        height: 72rem;
+    }
+
+    .footer{
+        height: 13rem;
+    }
+
+    .social{
+        padding-top: 3rem;
+        font-size: 1rem;
+    }
+
+    .text_footer{
+        padding-top: 2rem;
+        font-size: 0.7rem;
+    }
+}
